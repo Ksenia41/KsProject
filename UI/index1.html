@@ -1,0 +1,141 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Postogram</title>
+    <link rel="stylesheet" type="text/css" href="img/styles1.css">
+    <meta name="description" content="фотопортал">
+</head>
+<body id="body" class = "flex">
+<header class = "header flex">
+    <div class = "headerDiv center flex">
+        <a href="#" class = "logo flex">
+            <img class = "logoImage" src = "https://uc.uxpin.com/files/839015/832598/image-612fd1.png">
+            <div class = "verticalLine"></div>
+            <p class = "appName"><b>Ugagram</b></p>
+
+        </a>
+        <div class = "search flex">
+            <div class="help">You may search for A's and B's post, tagged with #c#d via typing "A B #c#d"</div>
+            <input class = "filterByTagAndName center" type="text" placeholder="Search">
+            <div class="dateRange flex">
+                <i class="material-icons center font30">date_range</i>
+                <div class="dateInputs">
+                    <i>from:</i>
+                    <input type="date">
+                    <i>to:</i>
+                    <input type="date">
+                </div>
+            </div>
+
+
+        </div>
+        <div class = "userButtons flex">
+            <a href="#">
+                <i class="font40 center" style = "margin-right: 5px"><b>+</b></i>
+            </a>
+            <div class = "editDelete">
+                <a href="#">
+                    <i class="material-icons font40 center accountPopup">
+                        person
+                    </i>
+                </a>
+                <div class = "editDeletePopup">
+                    <a href="#" class = "editDeleteMenuItem">Edit profile</a>
+                    <a href="#" class = "editDeleteMenuItem">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class = "content">
+    <ul class = "flex">
+        <li>
+            <header class = "userInfo flex">
+                <a href = "#">
+                    <img class = "userAvatar" src = "https://uc.uxpin.com/files/839015/832598/image-612fd1.png">
+                </a>
+                <a class = "username" href = "#"><b>Ugandan_warrior123</b></a>
+                <div class = "editDelete">
+                    <a href = "#">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <div class = "editDeletePopup">
+                        <a href="#" class = "editDeleteMenuItem">Edit</a>
+                        <a href="#" class = "editDeleteMenuItem">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <img class = "photo" src ="https://78.media.tumblr.com/cb2aeea6b06506af90614ee65e3fd3d2/tumblr_p282pi0P4m1rrgyf5o1_500.png">
+            <a href = "#" class = "star">
+                <i class="material-icons font40">favorite_border</i>
+            </a>
+            <div class = "amountOfLikes">
+                <i><b>1234 likes</b></i>
+            </div>
+            <div class = "comment">
+                <a class = "username" href = "#"><b>Ugandan_warrior123:</b></a>
+                <span>Главное после хорошего ужина - не унывать #uganda#food#I'm_so_fat</span>
+            </div>
+            <span class = "publDate">21.02.2018 18:53</span>
+        </li>
+        <li>
+            <header class = "userInfo flex">
+                <a href = "#">
+                    <img class = "userAvatar" src = "https://uc.uxpin.com/files/839015/832598/image-612fd1.png">
+                </a>
+                <a class = "username" href = "#"><b>Ugandan_warrior123</b></a>
+                <div class = "editDelete">
+                    <a href = "#">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <div class = "editDeletePopup">
+                        <a href="#" class = "editDeleteMenuItem">Edit</a>
+                        <a href="#" class = "editDeleteMenuItem">Delete</a>
+                    </div>
+                </div>
+            </header>
+            <img class = "photo" src ="https://uc.uxpin.com/files/839015/832598/image-612fd1.png">
+            <a href = "#" class = "star">
+                <i class="material-icons font40">favorite_border</i>
+            </a>
+            <div class = "amountOfLikes">
+                <i><b>12345 likes</b></i>
+            </div>
+            <div class = "comment">
+                <a class = "username" href = "#"><b>Ugandan_warrior123:</b></a>
+                <span>Главное после хорошего ужина - не унывать #uganda#food#I'm_so_fat</span>
+            </div>
+            <span class = "publDate">21.02.2018 18:50</span>
+        </li>
+    </ul>
+    <button class = "uploadOlder">Show older photos</button>
+</div>
+<footer class = "flex">
+    <div class = "logo flex">
+        <p class = "appName"><b>Ugagram</b></p>
+    </div>
+    <div class = "footerInfo">
+        <p>All content c 2018 Alexander Kovalchuk</p>
+        <p>FAMCS, group 5</p>
+        <p>last update: 21.02.2018</p>
+    </div>
+    <div class = "contacts">
+        <p>Contact Email: <b>skateray17@gmail.com</b></p>
+    </div>
+</footer>
+</body>
+<!--<script>
+    let hearts = document.getElementsByClassName('star');
+    for(let i = 0; i < hearts.length; i++)
+        hearts[i].addEventListener('click', (e)=>{
+            e.preventDefault();
+    if(hearts[i].children[0].innerHTML === 'favorite_border'){
+        hearts[i].children[0].innerHTML = 'favorite';
+        hearts[i].style = 'color: red';
+    } else {
+        hearts[i].children[0].innerHTML = 'favorite_border';
+        hearts[i].style = 'color: black';
+    }
+</script>-->
+</html>
