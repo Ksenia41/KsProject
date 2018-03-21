@@ -1,0 +1,315 @@
+html, body {
+    font-family: Bradley Hand, cursive;
+    margin: 0;
+    min-width: 750px;
+}
+
+body {
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 70px auto 70px auto;
+    min-width: 600px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    flex: 0 0 auto;
+    position: fixed;
+    border-bottom: black solid 2px;
+    height: 70px;
+    width: 100%;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+.header-bar {
+    display: flex;
+    font-size: 15px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto auto 10px;
+}
+
+.new-photo {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/newPhoto.png);
+    border: none;
+    margin: 15px 30px;
+    width: 54px;
+    height: 43px;
+}
+
+.title {
+    font-size: 3em;
+    margin: auto;
+}
+
+.userblock {
+    margin: 30px 40px 0 0;
+}
+
+.username {
+    position: relative;
+    font-size: 1.5em;
+    display: flex;
+    margin: 0 0 15px 10px;
+    right: 5%;
+}
+
+.button-exit {
+    font-size: large;
+    font-family: Bradley Hand, cursive;
+    background: #EEE;
+    width: 100px;
+    height: 35px;
+    border: solid black;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.button-exit:active{
+    -webkit-transform: scale(0.9); /* Safari and Chrome */
+    -moz-transform: scale(0.9); /* Firefox */
+    -ms-transform: scale(0.9); /* IE 9 */
+    -o-transform: scale(0.9); /* Opera */
+    transform: scale(0.9);
+}
+
+.search-line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px 100px;
+}
+
+.searchBox {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.searchBox input.search {
+    width: 250px;
+    height: 40px;
+    background: #EEE;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+.searchBox .icon {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 7px;
+    z-index: 1;
+    color: #4f5b66;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.searchBox input.search:focus, .searchBox input.search:active {
+    outline: none;
+}
+
+.searchBox:hover .icon {
+    color: #93a2ad;
+
+    -webkit-transform: scale(1.2); /* Safari and Chrome */
+    -moz-transform: scale(1.2); /* Firefox */
+    -ms-transform: scale(1.2); /* IE 9 */
+    -o-transform: scale(1.2); /* Opera */
+    transform: scale(1.2);
+}
+
+.searchBox input.search:hover, .container-1 input.search:focus, .container-1 input.search:active {
+    outline: none;
+    background: #C0C0C0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 600px;
+    height: auto;
+    margin-top: 85px;
+    margin-left: 100px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    z-index: 2;;
+}
+
+.container {
+    margin: auto auto 60px;
+}
+
+.photo {
+    height: 400px;
+    width: 400px;
+}
+
+.photoDescription {
+    display: flex;
+    flex-direction: column;
+    float: bottom;
+    margin-top: -15px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.like {
+    background-image: url(img/Like.png);
+}
+
+.date {
+    margin-left: 70px;
+    font-size: large;
+}
+
+.user-name {
+    margin-left: 10px;
+    font-size: large;
+}
+
+.decription {
+    font-size: large;
+    margin-top: 3px;
+}
+
+.hashtags {
+    font-size: large;
+    margin-top: 3px;
+}
+
+.redactArea {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-left: 5px;
+}
+
+.button {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+}
+
+.button:active{
+    -webkit-transform: scale(0.9); /* Safari and Chrome */
+    -moz-transform: scale(0.9); /* Firefox */
+    -ms-transform: scale(0.9); /* IE 9 */
+    -o-transform: scale(0.9); /* Opera */
+    transform: scale(0.9);
+}
+
+.redact {
+    background-image: url(img/changePhoto.png);
+}
+
+.delete {
+    margin-top: 5px;
+    background-image: url(img/deletePhoto.png);
+
+}
+
+.more-button {
+    font-size: xx-large;
+    font-family: Bradley Hand, cursive;
+    background: #EEE;
+    width: 200px;
+    height: 70px;
+    border: solid black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    outline: none;
+    margin:10px 40% 5%;
+}
+
+/*
+.more-button:hover{
+    -webkit-transform: scale(1.1); !* Safari and Chrome *!
+    -moz-transform: scale(1.1); !* Firefox *!
+    -ms-transform: scale(1.1); !* IE 9 *!
+    -o-transform: scale(1.1); !* Opera *!
+    transform: scale(1.1);
+}
+*/
+
+.more-button:active{
+    -webkit-transform: scale(0.9); /* Safari and Chrome */
+    -moz-transform: scale(0.9); /* Firefox */
+    -ms-transform: scale(0.9); /* IE 9 */
+    -o-transform: scale(0.9); /* Opera */
+    transform: scale(0.9);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    border-top: black solid 2px;
+    font-size: 1.3em;
+    background: white;
+    height: 30px;
+    /*
+    margin-top: -60px;
+    */
+}
+
+.link{
+    flex-direction: column;
+}
+
+.contact{
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+
+
