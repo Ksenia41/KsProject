@@ -1,0 +1,49 @@
+.add-edit-main {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    min-width: 700px;
+    font-family: Gabriola;
+    height: auto;
+}
+.create-photo{
+    display: flex;
+    background-image: url(img/createNewPhoto.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    cursor: pointer;
+}
+.input-photo-link{
+    display: none;
+}
+.hashtagsArea, .descriptionArea{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hashtag, .description{
+    font-size: 2em;
+}
+.inputHashtags, .inputDescription{
+    display: flex;
+    height: 2em;
+    width: 70%;
+    outline: none;
+}
+
+@media(max-width: 900px){
+    .create-photo{
+        height: 90vh;
+    }
+}
