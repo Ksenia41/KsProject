@@ -34,10 +34,10 @@ window.dom = (function () {
             const id = event.target.parentNode.parentNode.id;
             const indexOfPost = photoPosts.findIndex(elem => elem.id == id);
             if (photoPosts[indexOfPost].likes.includes(localStorage.user)) {
-                document.getElementById(id).getElementsByClassName('like button')[0].style.backgroundImage = 'url("img/Like.png")';
+                document.getElementById(id).getElementsByClassName('like button')[0].style.backgroundImage = 'url("UI/img/Like.png")';
                 photoPosts[indexOfPost].likes = photoPosts[indexOfPost].likes.filter(elem => elem !== localStorage.user);
             } else {
-                document.getElementById(id).getElementsByClassName('like button')[0].style.backgroundImage = 'url("img/activeLike.png")';
+                document.getElementById(id).getElementsByClassName('like button')[0].style.backgroundImage = 'url("UI/img/activeLike.png")';
                 photoPosts[indexOfPost].likes.push(localStorage.user);
             }
             localStorage.setItem('posts', JSON.stringify(photoPosts));
@@ -106,9 +106,9 @@ window.dom = (function () {
             setLike();
         });
         if (photoPost.likes.includes(localStorage.user)) {
-            likeButton.style.backgroundImage = 'url("img/activeLike.png")';
+            likeButton.style.backgroundImage = 'url("UI/img/activeLike.png")';
         } else {
-            likeButton.style.backgroundImage = 'url("img/Like.png")';
+            likeButton.style.backgroundImage = 'url("UI/img/Like.png")';
         }
 
         nickName.className = "user-name";
